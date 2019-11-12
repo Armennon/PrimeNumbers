@@ -1,4 +1,9 @@
 const util = require("./myUtils.js");
 
-console.log(util.isPrime(2));
+const reader = require('readline-sync');
+
+console.log(util.isPrimeForRange(reader.questionInt("Input first number "), reader.questionInt("Input second number ")));
+
+
+
 

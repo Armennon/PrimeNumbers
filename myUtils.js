@@ -15,5 +15,17 @@ module.exports = {
 		}
 
 		return true;
+	},
+	isPrimeForRange: function(start, end){
+		array = [];
+		if(start > end)
+			this.isPrimeForRange(end, start);
+		for(i = start; i <= end; i ++)
+		{
+			if(this.isPrime(i))
+				array[array.length] = i;
+		}
+		return array;
+			
 	}
 }
