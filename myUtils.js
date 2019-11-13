@@ -17,15 +17,22 @@ module.exports = {
 		return true;
 	},
 	isPrimeForRange: function(start, end){
-		array = [];
+		let array = [];
 		if(start > end)
 			this.isPrimeForRange(end, start);
-		for(i = start; i <= end; i ++)
+		for(let i = start; i <= end; i ++)
 		{
 			if(this.isPrime(i))
 				array[array.length] = i;
 		}
 		return array;
 			
-	}
+	},
+	arrayElements: function(array)
+		let result;
+		for(let i = 0; i < array.length; i++){
+			result += array[i] + " ";
+		}
+		return result;
 }
+
