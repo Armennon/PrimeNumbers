@@ -28,11 +28,12 @@ module.exports = {
 		return array;
 			
 	},
-	arrayElements: function(array)
+	arrayElements: function(array) {
 		let result;
 		for(let i = 0; i < array.length; i++){
 			result += array[i] + " ";
 		}
 		return result;
+	}
 }
 
